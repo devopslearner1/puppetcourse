@@ -1,0 +1,12 @@
+<html>
+   <ul>
+   <li>
+         <% scope["nginx::systeminformation::serverinfodata"].each do |info|-%>
+
+        Current value : <%= info["metric"] %>
+
+        <% end -%>
+   </li>
+   </ul>
+<html>
+
